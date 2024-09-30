@@ -1,0 +1,38 @@
+// tasks.json
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-g",
+                "${workspaceFolder}/project2.cpp",
+                "${workspaceFolder}/subexpression.cpp",
+                "${workspaceFolder}/operand.cpp",
+                "${workspaceFolder}/literal.cpp",
+                "${workspaceFolder}/symboltable.cpp",
+                "${workspaceFolder}/parse.cpp",
+                "${workspaceFolder}/plus.cpp",
+                "${workspaceFolder}/minus.cpp",
+                "${workspaceFolder}/multiply.cpp",
+                "${workspaceFolder}/divide.cpp",
+                "${workspaceFolder}/modulus.cpp",
+                "${workspaceFolder}/exponent.cpp",
+                "${workspaceFolder}/max.cpp",
+                "${workspaceFolder}/min.cpp",
+                "${workspaceFolder}/average.cpp",
+                // Add other .cpp files as needed
+                "-o",
+                "${workspaceFolder}/project2.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"],
+            "detail": "Generated task for building C++ files."
+        }
+    ]
+}
